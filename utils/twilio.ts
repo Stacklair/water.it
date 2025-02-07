@@ -3,8 +3,8 @@
 import twilio from "twilio";
 import { phoneNumbers } from "@/cache";
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID || "your_account_sid";
-const authToken = process.env.TWILIO_AUTH_TOKEN || "your_auth_token";
+const accountSid = process.env.TWILIO_ACCOUNT_SID || "AC_your_account_sid";
+const authToken = process.env.TWILIO_AUTH_TOKEN || "c8_your_auth_token";
 const whatsappNumber =
   process.env.TWILIO_WHATSAPP_NUMBER || "whatsapp:+14155238886"; // Default Twilio sandbox number
 
