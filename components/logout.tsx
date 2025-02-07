@@ -5,9 +5,7 @@ import { Button } from "./ui/button";
 import { signOut } from "next-auth/react";
 
 function Logout() {
-  const handleLogout = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
+  const handleLogout = () => {
     signOut({ callbackUrl: "/login" });
   };
 

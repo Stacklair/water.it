@@ -1,10 +1,10 @@
 import prisma from "@/prisma/client";
-import { sendReminderEmail } from "@/utils/resend";
+// import { sendReminderEmail } from "@/utils/resend";
 import { NextRequest, NextResponse } from "next/server";
 import { getNextEventTime } from "@/utils/utilities";
 import { sendWhatsAppMessage } from "@/utils/twilio";
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   try {
     const email = req.headers.get("x-email");
     if (!email) {

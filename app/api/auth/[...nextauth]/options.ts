@@ -21,7 +21,7 @@ export const authOptions: NextAuthOptions = {
         },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials, req): Promise<any> {
+      async authorize(credentials) {
         try {
           if (!credentials) throw new Error("No credentials provided.");
 

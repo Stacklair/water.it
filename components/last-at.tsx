@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import ColourfulText from "./ui/colourful-text";
 import { toast } from "@/hooks/use-toast";
 import { getLatestStatus } from "@/app/service";
 

@@ -1,7 +1,7 @@
 import prisma from "@/prisma/client";
 import { NextResponse } from "next/server";
 import { isISTTime } from "./service";
-import { sendReminderEmail } from "@/utils/resend";
+// import { sendReminderEmail } from "@/utils/resend";
 import { sendWhatsAppMessage } from "@/utils/twilio";
 import { getMessageContent } from "@/utils/utilities";
 

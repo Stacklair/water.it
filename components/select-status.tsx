@@ -41,7 +41,7 @@ export default function StatusForm({
 }: {
   onStatusSubmitted: () => void;
 }) {
-  const [loading, startTransition] = useTransition();
+  const [loading] = useTransition();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -66,6 +66,7 @@ export default function StatusForm({
         title: "Error submitting status!",
         description: data.status,
       });
+      console.log(error.message);
     }
   }
 
